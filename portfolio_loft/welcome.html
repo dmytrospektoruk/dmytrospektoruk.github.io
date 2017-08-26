@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница
+    </title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+    <style type="text/css">body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+  </head>
+  <body class="welcome">
+    <div class="preloader" style="height: 100vh; width: 100%; text-align: center; background: #6A9659 url('img/general/preloader.jpg'); background-size: cover; color: #fff; position: fixed; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 5; margin-right: 17px;"><span class="preloader__text">0</span>
+      <svg class="preloader__svg" version="1.1" id="preloader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve"> 
+        <g>
+          <path class="preloader__path preloader__path--1" fill="none" d="M0,8.005c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,8.005,80,8.005"></path>
+        </g>
+        <g>
+          <path class="preloader__path preloader__path--2" fill="none" d="M0,31.684c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,31.684,80,31.684"></path>
+        </g>
+        <g>
+          <path class="preloader__path preloader__path--3" fill="none" stroke-miterlimit="10" d="M0,55.362c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,55.362,80,55.362"></path>
+        </g>
+      </svg>
+    </div>
+    <div class="wrapper">
+      <div class="container"><a class="top__login" href="javaScript:void(0)" id="sign_in">Авторизоваться</a>
+        <div class="form__wrap">
+          <div class="form__block">
+            <div class="info active">
+              <div class="author"><img class="avatar" src="img/general/dmytro_spektoruk.jpg" alt="Dmytro Spektoruk - web developer, front-end"></div>
+              <h1 class="author__name">Дмитрий Спекторук</h1><span class="author__about">Личный сайт веб разработчика</span>
+              <ul class="social">
+                <li class="social__item"><a class="social__link" href="javaScript:void(0)">
+                    <svg class="icon icon-vk ">
+                      <use xlink:href="/img/svg/symbol/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="javaScript:void(0)">
+                    <svg class="icon icon-github ">
+                      <use xlink:href="/img/svg/symbol/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="javaScript:void(0)">
+                    <svg class="icon icon-in ">
+                      <use xlink:href="/img/svg/symbol/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+              <ul class="form__menu">
+                <li class="form__item"><a class="form__link" href="works.html">Мои работы</a></li>
+                <li class="form__item"><a class="form__link" href="about.html">Обо мне</a></li>
+                <li class="form__item"><a class="form__link" href="blog.html">Блог</a></li>
+              </ul>
+            </div>
+            <form class="login">
+              <h2 class="form__title">Авторизуйтесь</h2>
+              <div class="form__item">
+                <div class="form__icon">
+                  <svg class="icon icon-login ">
+                    <use xlink:href="/img/svg/symbol/sprite.svg#login"></use>
+                  </svg>
+                </div>
+                <input class="form__input form__input--icon" type="text" placeholder="Логин">
+              </div>
+              <div class="form__item">
+                <div class="form__icon">
+                  <svg class="icon icon-password ">
+                    <use xlink:href="/img/svg/symbol/sprite.svg#password"></use>
+                  </svg>
+                </div>
+                <input class="form__input form__input--icon" type="password" placeholder="Пароль">
+              </div>
+              <div class="form__item form__item--human">
+                <input class="form__checkbox" type="checkbox" id="checkbox_human">
+                <label class="checkbox_btn" for="checkbox_human"></label>
+                <label class="author__about form__item-label" for="checkbox_human">Я человек</label>
+              </div><span class="author__about form__robot-text">Вы точно не робот?</span>
+              <div class="form__sure">
+                <div class="form__sure--yes">
+                  <input class="form__radio" type="radio" id="radoi_yes" name="form__radio">
+                  <label class="radio_btn" for="radoi_yes"></label>
+                  <label class="author__about form__radio--yes" for="radoi_yes">Да</label>
+                </div>
+                <div class="form__sure--no">
+                  <input class="form__radio" type="radio" id="radoi_no" name="form__radio">
+                  <label class="radio_btn" for="radoi_no"></label>
+                  <label class="author__about form__radio--no" for="radoi_no">Не уверен</label>
+                </div>
+              </div>
+              <ul class="form__menu">
+                <li class="form__item"><a class="form__link" href="javaScript:void(0)" id="sign_in_back">На главную</a></li>
+                <li class="form__item"><a class="form__link" href="javaScript:void(0)">Войти</a></li>
+              </ul>
+            </form>
+          </div>
+        </div>
+        <footer class="footer"><span class="footer__author">© Дмитрий Спекторук</span><span class="footer__sep">| </span>создано с любовью к <a class="loftschool" href="https://loftschool.com/">LoftSchool </a>| 2017</footer>
+      </div>
+    </div>
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
