@@ -35,19 +35,24 @@
     </div>
     <div class="wrapper" style="opacity: 0; display: none;">
       <header class="main-header">
+        <div class="header__bg"><img class="header__bg__img" src="img/general/welcome_bg.jpg" alt=""></div>
         <div class="header__top">
           <ul class="social social--top">
-            <li class="social__item"><a class="social__link" href="javaScript:void(0)">
-                <svg class="icon icon-vk ">
-                  <use xlink:href="/img/svg/symbol/sprite.svg#vk"></use>
+            <li class="social__item"><a class="social__link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=dmytrospektoruk@gmail.com&amp;su=Loft.portfolio%20WebDevelopment%20Request">
+                <svg class="icon icon-gmail ">
+                  <use xlink:href="/img/svg/symbol/sprite.svg#gmail"></use>
                 </svg></a></li>
-            <li class="social__item"><a class="social__link" href="javaScript:void(0)">
+            <li class="social__item"><a class="social__link" href="https://github.com/dmytrospektoruk/">
                 <svg class="icon icon-github ">
                   <use xlink:href="/img/svg/symbol/sprite.svg#github"></use>
                 </svg></a></li>
-            <li class="social__item"><a class="social__link" href="javaScript:void(0)">
+            <li class="social__item"><a class="social__link" href="https://www.linkedin.com/in/dmytro-spektoruk-b4a4b014a/">
                 <svg class="icon icon-in ">
                   <use xlink:href="/img/svg/symbol/sprite.svg#in"></use>
+                </svg></a></li>
+            <li class="social__item"><a class="social__link" href="https://t.me/Dmytro_hill/">
+                <svg class="icon icon-telegram ">
+                  <use xlink:href="/img/svg/symbol/sprite.svg#telegram"></use>
                 </svg></a></li>
           </ul>
         </div>
@@ -179,19 +184,28 @@
               </blockquote>
             </div>
             <form class="feedback__form">
+              <input type="hidden" name="project_name" value="Loft Portfolio Site">
+              <input type="hidden" name="admin_email" value="dima_sp2@ro.ru">
+              <input type="hidden" name="form_subject" value="Contact Form Request">
               <h2 class="form__title">Связаться со мной</h2>
               <div class="form__item">
-                <input class="form__input" type="text" placeholder="Логин">
+                <input class="form__input" type="text" name="name" placeholder="Ваше имя*"><span class="form__error">
+                  <div class="error__triangle"></div>
+                  <div class="error__text"> </div></span>
               </div>
               <div class="form__item">
-                <input class="form__input" type="password" placeholder="Пароль">
+                <input class="form__input" type="email" name="email" placeholder="Ваш email*"><span class="form__error">
+                  <div class="error__triangle"></div>
+                  <div class="error__text"> </div></span>
               </div>
               <div class="form__item">
-                <textarea class="form__textarea" placeholder="Ваше сообщение" noresize></textarea>
-              </div>
+                <textarea class="form__textarea" placeholder="Ваше сообщение*" name="request" noresize></textarea><span class="form__error">
+                  <div class="error__triangle"></div>
+                  <div class="error__text"> </div></span>
+              </div><span class="form__success"> </span>
               <ul class="form__menu">
-                <li class="form__item"><a class="form__link" href="javaScript:void(0)" id="sign_in_back">Отправить</a></li>
-                <li class="form__item"><a class="form__link" href="javaScript:void(0)">Очистить</a></li>
+                <li class="form__item"><a class="form__link" href="javaScript:void(0)" id="reset_form">Очистить</a></li>
+                <li class="form__item"><a class="form__link" href="javaScript:void(0)" id="contact_me">Отправить</a></li>
               </ul>
             </form>
           </div>
@@ -210,17 +224,21 @@
               <li class="menu__item"><a class="menu__link" href="welcome.html">Авторизация</a></li>
             </nav>
             <ul class="social social--footer">
-              <li class="social__item"><a class="social__link" href="javaScript:void(0)">
-                  <svg class="icon icon-vk ">
-                    <use xlink:href="/img/svg/symbol/sprite.svg#vk"></use>
+              <li class="social__item"><a class="social__link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=dmytrospektoruk@gmail.com&amp;su=Loft.portfolio%20WebDevelopment%20Request">
+                  <svg class="icon icon-gmail ">
+                    <use xlink:href="/img/svg/symbol/sprite.svg#gmail"></use>
                   </svg></a></li>
-              <li class="social__item"><a class="social__link" href="javaScript:void(0)">
+              <li class="social__item"><a class="social__link" href="https://github.com/dmytrospektoruk/">
                   <svg class="icon icon-github ">
                     <use xlink:href="/img/svg/symbol/sprite.svg#github"></use>
                   </svg></a></li>
-              <li class="social__item"><a class="social__link" href="javaScript:void(0)">
+              <li class="social__item"><a class="social__link" href="https://www.linkedin.com/in/dmytro-spektoruk-b4a4b014a/">
                   <svg class="icon icon-in ">
                     <use xlink:href="/img/svg/symbol/sprite.svg#in"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="https://t.me/Dmytro_hill/">
+                  <svg class="icon icon-telegram ">
+                    <use xlink:href="/img/svg/symbol/sprite.svg#telegram"></use>
                   </svg></a></li>
             </ul>
           </div>
@@ -231,7 +249,7 @@
         <footer class="footer footer__bottom"><span class="footer__author">© Дмитрий Спекторук</span><span class="footer__sep"> | </span>создано с любовью в LoftSchool | 2017</footer>
       </div>
     </div>
-    <link rel="stylesheet" type="text/css" href="css/main.min.css">
-    <script src="js/scripts.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/scripts.js"></script>
   </body>
 </html>

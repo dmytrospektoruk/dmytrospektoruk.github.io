@@ -34,24 +34,28 @@
       </svg>
     </div>
     <div class="wrapper">
-      <div class="container"><a class="top__login" href="javaScript:void(0)" id="sign_in">Авторизоваться</a>
+      <div class="container"><a class="top__login" href="javaScript:void(0)" id="sign_in_form">Авторизоваться</a>
         <div class="form__wrap">
           <div class="form__block">
             <div class="info active">
               <div class="author"><img class="avatar" src="img/general/dmytro_spektoruk.jpg" alt="Dmytro Spektoruk - web developer, front-end"></div>
               <h1 class="author__name">Дмитрий Спекторук</h1><span class="author__about">Личный сайт веб разработчика</span>
               <ul class="social">
-                <li class="social__item"><a class="social__link" href="javaScript:void(0)">
-                    <svg class="icon icon-vk ">
-                      <use xlink:href="/img/svg/symbol/sprite.svg#vk"></use>
+                <li class="social__item"><a class="social__link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=dmytrospektoruk@gmail.com&amp;su=Loft.portfolio%20WebDevelopment%20Request">
+                    <svg class="icon icon-gmail ">
+                      <use xlink:href="/img/svg/symbol/sprite.svg#gmail"></use>
                     </svg></a></li>
-                <li class="social__item"><a class="social__link" href="javaScript:void(0)">
+                <li class="social__item"><a class="social__link" href="https://github.com/dmytrospektoruk/">
                     <svg class="icon icon-github ">
                       <use xlink:href="/img/svg/symbol/sprite.svg#github"></use>
                     </svg></a></li>
-                <li class="social__item"><a class="social__link" href="javaScript:void(0)">
+                <li class="social__item"><a class="social__link" href="https://www.linkedin.com/in/dmytro-spektoruk-b4a4b014a/">
                     <svg class="icon icon-in ">
                       <use xlink:href="/img/svg/symbol/sprite.svg#in"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="https://t.me/Dmytro_hill/">
+                    <svg class="icon icon-telegram ">
+                      <use xlink:href="/img/svg/symbol/sprite.svg#telegram"></use>
                     </svg></a></li>
               </ul>
               <ul class="form__menu">
@@ -68,7 +72,9 @@
                     <use xlink:href="/img/svg/symbol/sprite.svg#login"></use>
                   </svg>
                 </div>
-                <input class="form__input form__input--icon" type="text" placeholder="Логин">
+                <input class="form__input form__input--icon" type="text" placeholder="Логин" name="login"><span class="form__error">
+                  <div class="error__triangle"></div>
+                  <div class="error__text"> </div></span>
               </div>
               <div class="form__item">
                 <div class="form__icon">
@@ -76,28 +82,34 @@
                     <use xlink:href="/img/svg/symbol/sprite.svg#password"></use>
                   </svg>
                 </div>
-                <input class="form__input form__input--icon" type="password" placeholder="Пароль">
+                <input class="form__input form__input--icon" type="password" placeholder="Пароль" name="password"><span class="form__error">
+                  <div class="error__triangle"></div>
+                  <div class="error__text"> </div></span>
               </div>
               <div class="form__item form__item--human">
-                <input class="form__checkbox" type="checkbox" id="checkbox_human">
+                <input class="form__checkbox" type="checkbox" id="checkbox_human" name="human_check">
                 <label class="checkbox_btn" for="checkbox_human"></label>
                 <label class="author__about form__item-label" for="checkbox_human">Я человек</label>
               </div><span class="author__about form__robot-text">Вы точно не робот?</span>
-              <div class="form__sure">
-                <div class="form__sure--yes">
-                  <input class="form__radio" type="radio" id="radoi_yes" name="form__radio">
-                  <label class="radio_btn" for="radoi_yes"></label>
-                  <label class="author__about form__radio--yes" for="radoi_yes">Да</label>
-                </div>
-                <div class="form__sure--no">
-                  <input class="form__radio" type="radio" id="radoi_no" name="form__radio">
-                  <label class="radio_btn" for="radoi_no"></label>
-                  <label class="author__about form__radio--no" for="radoi_no">Не уверен</label>
-                </div>
+              <div class="form__item">
+                <div class="form__sure">
+                  <div class="form__sure--yes">
+                    <input class="form__radio" type="radio" id="radoi_yes" name="form__radio">
+                    <label class="radio_btn" for="radoi_yes"></label>
+                    <label class="author__about form__radio--yes" for="radoi_yes">Да</label>
+                  </div>
+                  <div class="form__sure--no">
+                    <input class="form__radio" type="radio" id="radoi_no" name="form__radio">
+                    <label class="radio_btn" for="radoi_no"></label>
+                    <label class="author__about form__radio--no" for="radoi_no">Не уверен</label>
+                  </div>
+                </div><span class="form__error form__error__human">
+                  <div class="error__triangle"></div>
+                  <div class="error__text"> </div></span>
               </div>
               <ul class="form__menu">
                 <li class="form__item"><a class="form__link" href="javaScript:void(0)" id="sign_in_back">На главную</a></li>
-                <li class="form__item"><a class="form__link" href="javaScript:void(0)">Войти</a></li>
+                <li class="form__item"><a class="form__link" href="javaScript:void(0)" id="sign_in">Войти</a></li>
               </ul>
             </form>
           </div>
@@ -105,7 +117,7 @@
         <footer class="footer"><span class="footer__author">© Дмитрий Спекторук</span><span class="footer__sep">| </span>создано с любовью к <a class="loftschool" href="https://loftschool.com/">LoftSchool </a>| 2017</footer>
       </div>
     </div>
-    <link rel="stylesheet" type="text/css" href="css/main.min.css">
-    <script src="js/scripts.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/scripts.js"></script>
   </body>
 </html>
