@@ -24,7 +24,7 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'mail.dmytrospektoruk.pro';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'support@dmytrospektoruk.pro';                 // SMTP username
-$mail->Password = '123321555';                           // SMTP password
+$mail->Password = 'tempPass';                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
 
