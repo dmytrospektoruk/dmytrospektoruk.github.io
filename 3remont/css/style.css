@@ -2481,4 +2481,11 @@ span.price{
   white-space: nowrap;
 }
 
+#top_menu .logo_new {
+  width: 35%;
+  margin: 0;
+  float: left;
+  height: 74px;
+}
+
 /*Changes from 13.09.2017 end*/
