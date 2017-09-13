@@ -2482,11 +2482,11 @@ span.price{
 #top_menu {
   height: auto;
 }
-/*#top_menu .logo_new {
-  width: 35%;
-  margin: 0;
-  float: left;
-  height: 74px;
-}*/
+footer .container .phon {
+  font-size: 26px;
+}
+footer .blank .s-text-sh {
+  margin-top: 5px;
+}
 
 /*Changes from 13.09.2017 end*/
