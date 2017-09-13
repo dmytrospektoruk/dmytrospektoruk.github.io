@@ -2336,8 +2336,8 @@ span.price{
 
 .header_new {
   font-family: 'K_PlumbMedium';
-  /*margin-bottom: 50px;*/
   width: 100%;
+  max-width: 1100px;
   background-color: #1A1E27;
   position: relative;
   display: -webkit-flex;
@@ -2351,7 +2351,8 @@ span.price{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 10px 25px 15px 25px;
+  margin: 0 auto;
+  padding: 5px 20px 10px 20px;
 }
 
 .header__left_column {
@@ -2388,8 +2389,8 @@ span.price{
   align-items: center;
   color: #fff;
   font-size: 0.9rem;
-  margin-bottom: 25px;
-  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-top: 8px;
 }
 
 .logo__link {
@@ -2436,7 +2437,6 @@ span.price{
 
 .phone__city {
   color: #fff;
-  font-weight: 600;
 }
 
 .phones__schedule {
@@ -2464,28 +2464,29 @@ span.price{
 
 .free__text {
   color: #fff;
-  font-weight: 600;
 }
 
 .free__number {
   color: #ffc000;
-  font-weight: 600;
-  font-size: 1.65rem;
 }
 
 .free__link {
   margin: 0;
   width: auto;
-  padding: 0 5px;
+  padding: 5px;
   float: none;
   white-space: nowrap;
+  line-height: 20px;
+  height: auto;
 }
-
-#top_menu .logo_new {
+#top_menu {
+  height: auto;
+}
+/*#top_menu .logo_new {
   width: 35%;
   margin: 0;
   float: left;
   height: 74px;
-}
+}*/
 
 /*Changes from 13.09.2017 end*/
